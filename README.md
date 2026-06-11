@@ -29,7 +29,7 @@ The goal is to explore how video codecs work internally and how classical codec 
 
 ####  • [Image Studio](https://github.com/RafaelAmauri/Image-Studio) - High-performance image processing library
     
-Image-Studio is a from-scratch project where I implement classical image processing algorithms manually using only Numpy and Cython. No PIL, no OpenCV. 
+Image-Studio is a from-scratch project where I implement classical image processing algorithms manually using only NumPy and Cython. No PIL, no OpenCV. 
 
 It features colorspace conversion, color palette mapping, dithering, quantization, Cython acceleration for the inherently sequential algorithms and high-performance pixel operations on large images.
 
@@ -37,9 +37,9 @@ It features colorspace conversion, color palette mapping, dithering, quantizatio
 
 #### • [Tree](https://github.com/RafaelAmauri/Tree) - Non-recursive C implementation of ```tree```
 
-Tree is a portable implementation of the ```tree``` command in pure C.
+Tree is a lightweight implementation of the ```tree``` command in pure C.
 
-This project avoids any recursion, instead using a custom linked stack to list directory contents, which improves performance and reduces resource usage by avoiding recursion. The program also only utilizes the C standard library, which makes it extremely portable and lightweight.
+This project avoids recursive filesystem traversal by using a custom linked stack to list directory contents, which keeps the traversal state explicit and avoids growing the call stack on deeply nested directories. The implementation is small and lightweight, using C with POSIX filesystem APIs.
 
 **Topics:** C, data structures, filesystem traversal
 
