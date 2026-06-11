@@ -17,10 +17,6 @@ I like building technical projects to understand how pipelines work internally, 
    
 ### Selected projects
 
-Feel free to check out my [Projects Repo](https://github.com/RafaelAmauri/Projects), where I try to keep an updated record of what I'm working on.
-
-Here are some of my personal projects:
-
 #### • [Z-Tensor](https://github.com/RafaelAmauri/Z-Tensor) - Experimental video codec 
 
 Z-Tensor is an experimental video codec implemented from scratch in Python and PyTorch. 
