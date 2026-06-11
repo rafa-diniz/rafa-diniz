@@ -31,7 +31,7 @@ The goal is to explore how video codecs work internally and how classical codec 
     
 Image-Studio is a from-scratch project where I implement classical image processing algorithms manually using only Numpy and Cython. No PIL, no OpenCV. 
 
-It features colorspace conversion, color pallete mapping, dithering, quantization, Cython acceleration for the inherently sequential algorithms and high-performance pixel operations on large images.
+It features colorspace conversion, color palette mapping, dithering, quantization, Cython acceleration for the inherently sequential algorithms and high-performance pixel operations on large images.
 
 **Topics:** Image processing, NumPy, Cython, performance optimization
 
@@ -39,7 +39,7 @@ It features colorspace conversion, color pallete mapping, dithering, quantizatio
 
 Tree is a portable implementation of the ```tree``` command in pure C.
 
-This project avoids any recursion, instead using a custom linked stack to list directory contents, which improves performance and reduces resource usage by avoiding slow recursion loops. The program also only utilizes the C standard library, which makes it extremely portable and lightweight.
+This project avoids any recursion, instead using a custom linked stack to list directory contents, which improves performance and reduces resource usage by avoiding recursion. The program also only utilizes the C standard library, which makes it extremely portable and lightweight.
 
 **Topics:** C, data structures, filesystem traversal
 
