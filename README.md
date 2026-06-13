@@ -25,7 +25,7 @@ It features tensorized block-matching motion estimation, residual coding, scene-
 
 The goal is to explore how video codecs work internally and how classical codec components can be implemented manually in high-performance GPU-accelerated tensor ops, rather than using existing codec libraries.
 
-**Topics:** GPU programming, video encoding/decoding, compression, motion estimation, chroma subsampling, tensor operations
+**Topics:** video encoding/decoding, compression, GPU-accelerated tensor operations, motion estimation, chroma subsampling
 
 ####  • [Image Studio](https://github.com/RafaelAmauri/Image-Studio) - High-performance image processing library
     
@@ -45,4 +45,4 @@ This project avoids recursive filesystem traversal by using a custom linked stac
 
 ## What I'm interested in
 
-I'm interested in Computer Vision, High-Performance Systems, Machine Learning, Applied AI, Visual Computing, Video ML and GPU/image processing roles.
+I'm interested in Computer Vision, High-Performance Systems, Machine Learning, Visual Computing, Video ML and GPU/image processing roles.
