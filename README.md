@@ -27,7 +27,7 @@ The goal is to explore how video codecs work internally and how classical codec 
 
 **Topics:** video encoding/decoding, compression, GPU-accelerated tensor operations, motion estimation, chroma subsampling
 
-####  • [Image Studio](https://github.com/RafaelAmauri/Image-Studio) - High-performance image processing library
+####  • [Image Studio](https://github.com/rafa-diniz/Image-Studio) - High-performance image processing library
     
 Image-Studio is a from-scratch project where I implement classical image processing algorithms manually using only NumPy and Cython. No PIL, no OpenCV. 
 
@@ -35,7 +35,7 @@ It features colorspace conversion, color palette mapping, dithering, quantizatio
 
 **Topics:** Image processing, NumPy, Cython, performance optimization
 
-#### • [Tree](https://github.com/RafaelAmauri/Tree) - Non-recursive C implementation of ```tree```
+#### • [Tree](https://github.com/rafa-diniz/Tree) - Non-recursive C implementation of ```tree```
 
 Tree is a lightweight implementation of the ```tree``` command in pure C.
 
