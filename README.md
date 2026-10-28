@@ -1,48 +1,62 @@
-# Rafael
+<h1 align="center">Rafael Diniz</h1>
 
-I'm a Computer Vision / Machine Learning master's student at UFMG researching Active Learning for sequential tasks. 
+<p align="center">
+  <b>Machine Learning Engineer &amp; Researcher</b><br>
+  MSc in Computer Science, UFMG (2026) · First author, BMVC 2026 · Belo Horizonte, Brazil
+</p>
 
-I also build visual-computing systems from scratch. My strongest interests are computer vision, machine learning, image/video processing, Linux systems and open-source tools.
+<p align="center">
+  <a href="https://www.linkedin.com/in/rafael-diniz-augusto/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:amauri.rafael33@gmail.com"><img src="https://img.shields.io/badge/Email-555555?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://scholar.google.com/citations?hl=en&user=cTYoqLMAAAAJ"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=flat-square&logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
+  <a href="https://arxiv.org/abs/2609.06843"><img src="https://img.shields.io/badge/BMVC_2026-paper-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Paper"></a>
+</p>
 
-I like building technical projects to understand how pipelines work internally, how data moves through a system, and where the performance bottlenecks appear in practice.
+---
 
-### Technical focus
+I work on label-efficient learning for machine learning models by figuring out which data is worth labeling, and proving it with controlled experiments.
 
-* Computer Vision and Machine Learning
-* Active Learning
-* PyTorch for ML and tensor computation
-* High-performance pipelines for image/video processing
-* Vectorized NumPy and Cython optimization
-* Linux-based development and open-source tooling
-   
-### Selected projects
+**Currently open** to ML engineer and research engineer roles.
 
-#### • [Z-Tensor](https://github.com/rafa-diniz/Z-Tensor) - Experimental video codec 
+### Publications
 
-Z-Tensor is an experimental video codec implemented from scratch in Python and PyTorch. 
+**RAIDAL: Redundancy-Aware Information Density Active Learning for CTC-Based Continuous Sign Language Recognition**  
+**Rafael A. Diniz Augusto**, Gabriel L. Oliveira, Erickson R. Nascimento · *BMVC 2026*  
+[Paper](https://arxiv.org/abs/2609.06843) · [Code](https://github.com/verlab/RAIDAL)
 
-It features tensorized block-matching motion estimation, residual coding, scene-aware I-frame selection, chroma subsampling, custom binary serialization, Zstandard compression and CPU/GPU execution.
+- To our knowledge, the first study of active learning for continuous sign language recognition.
+- Repurposes the CTC decoder's alignment peaks so the acquisition function only scores the parts of a video that support the model's predictions.
+- Achieves the best results in datasets with large vocabularies across CNN and Transformer backbones, backed by paired-seed replications, ablations and significance tests.
+- On PHOENIX-T, reaches the target error rate one labeling round earlier than random sampling: an estimated 9–18 hours of expert annotation saved.
 
-The goal is to explore how video codecs work internally and how classical codec components can be implemented manually in high-performance GPU-accelerated tensor ops, rather than using existing codec libraries.
+**Development of a Solar Radiation Map Using Artificial Intelligence Techniques**  
+**Rafael A. Diniz Augusto**, Cristiana B. Maia, Silvio J. F. Guimarães · *ENCIT 2022 (Brazilian Congress of Thermal Sciences and Engineering)*  
+[Paper](https://www.sistema.abcm.org.br/articleFiles/download/36482) · [Code](https://github.com/rafa-diniz/SolarIrradiance)
 
-**Topics:** video encoding/decoding, compression, GPU-accelerated tensor operations, motion estimation, chroma subsampling
+- Forecasts monthly solar irradiation with seasonal Holt-Winters, trained on six years of cleaned INMET data from 74 weather stations in and around Minas Gerais.
+- Expanding-window evaluation: each year is predicted using only the years before it, giving 48 monthly forecasts per station (2017–2020) with a mean absolute error of about 0.3 kWh/m²/day, on values that typically range from 4 to 6.
+- Inverse distance weighting turns the station forecasts into a statewide irradiation map, covering cities without a weather station.
 
-####  • [Image Studio](https://github.com/rafa-diniz/Image-Studio) - High-performance image processing library
-    
-Image-Studio is a from-scratch project where I implement classical image processing algorithms manually using only NumPy and Cython. No PIL, no OpenCV. 
+### Experience
 
-It features colorspace conversion, color palette mapping, dithering, quantization, Cython acceleration for the inherently sequential algorithms and high-performance pixel operations on large images.
+**VeRLab, UFMG** · MSc researcher, Computer Vision & Machine Learning (2024–2026)  
+Active learning for video recognition with CTC-based models (CorrNet, Swin-MSTP); experimental design and statistical evaluation.
 
-**Topics:** Image processing, NumPy, Cython, performance optimization
+**VEDECOM & EFREI, Paris** · Research exchange (2023, 6 months)  
+Data-efficient object detection for autonomous driving on BDD100K; FP32-to-INT8 quantization and deployment with TensorRT.
 
-#### • [Tree](https://github.com/rafa-diniz/Tree) - Non-recursive C implementation of ```tree```
+**PUC Minas** · Undergraduate researcher, Machine Learning (2020–2022)  
+Time-series forecasting for solar irradiation mapping (ENCIT 2022). Awarded the Best STEM Project at the 29th PUC Minas Undergraduate Research Seminar.
 
-Tree is a lightweight implementation of the ```tree``` command in pure C.
+**Backend engineering intern** (2019–2020) · Python, Flask, Docker.
 
-This project avoids recursive filesystem traversal by using a custom linked stack to list directory contents, which keeps the traversal state explicit and avoids growing the call stack on deeply nested directories. The implementation is small and lightweight, using C with POSIX filesystem APIs.
+### Built from scratch
 
-**Topics:** C, data structures, filesystem traversal
+I like understanding systems by rebuilding them.
 
-## What I'm interested in
+- **[Z-Tensor](https://github.com/rafa-diniz/Z-Tensor)**: a video codec written in PyTorch, with GPU-tensorized block-matching motion estimation, residual coding, scene-aware keyframes and a custom bitstream.
+- **[Image-Studio](https://github.com/rafa-diniz/Image-Studio)**: an image-processing engine in NumPy and Cython (no PIL/OpenCV). Features include color-space conversion, custom color LUTs, quantization and dithering.
 
-I'm interested in Computer Vision, High-Performance Systems, Machine Learning, Visual Computing, Video ML and GPU/image processing roles.
+### Toolbox
+
+Python · PyTorch · NumPy · scikit-learn · OpenCV · Docker · Git · Linux · TensorRT
