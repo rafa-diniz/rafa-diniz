@@ -52,7 +52,7 @@ Time-series forecasting for solar irradiation mapping (ENCIT 2022). Awarded the 
 
 ### Built from scratch
 
-I like understanding systems by rebuilding them.
+I like understanding systems by rebuilding them. Here are some of my projects:
 
 - **[Z-Tensor](https://github.com/rafa-diniz/Z-Tensor)**: a video codec written in PyTorch, with GPU-tensorized block-matching motion estimation, residual coding, scene-aware keyframes and a custom bitstream.
 - **[Image-Studio](https://github.com/rafa-diniz/Image-Studio)**: an image-processing engine in NumPy and Cython (no PIL/OpenCV). Features include color-space conversion, custom color LUTs, quantization and dithering.
